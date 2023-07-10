@@ -13,7 +13,7 @@ function verificar() {
         img.setAtributte('id','foto')
             if(fsex[0].checked){
                 gênero = 'Homem'
-                if (idade >=0 && idade 10) {
+                if (idade >=0 && idade  <10) {
                     // Criança 
                     img.setAtributte('src', 'criança-menino.png')
                 } else if (idade < 21) {
@@ -26,9 +26,10 @@ function verificar() {
                     //idoso 
                     img.setAtributte('src', 'idoso.png')
                 }
+
             } else if (fsex[1].checked) {
                 gênero = 'Mulher' 
-                if (idade >=0 && idade 10) {
+                if (idade >=0 && idade < 10) {
                     // Criança 
                     img.setAtributte('src', 'criança-menina.png')
                 } else if (idade < 21) {
@@ -47,4 +48,4 @@ function verificar() {
             res.appendChild(img)
     }
 
-}
+} 
